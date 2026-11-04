@@ -41,7 +41,7 @@ struct ContentView: View {
                 ToolbarItem(placement: .topBarLeading) {
                     Label("Meus Lugares", systemImage: "map")
                 }
-                
+                //Filtro para favoritos
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         listaFavoritos.toggle()

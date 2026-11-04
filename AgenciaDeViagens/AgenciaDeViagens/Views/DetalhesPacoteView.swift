@@ -19,7 +19,7 @@ struct DetalhesPacoteView: View{
                         Image(pacote.foto)
                             .resizable()
                             .scaledToFill()
-                            .frame(height: 250)
+                            .frame(maxWidth: 380, maxHeight: 250)
                             .clipShape(
                                 RoundedRectangle(cornerRadius: 16)
                             )
