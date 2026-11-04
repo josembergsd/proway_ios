@@ -39,8 +39,8 @@ struct CardView: View {
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .foregroundStyle(.blue)
-        .glassEffect(in: .rect(cornerRadius: 5))
-        .shadow(radius: 4)
+        .glassEffect(in: .rect(cornerRadius: 15))
+        .shadow(color: .cyan.opacity(0.3) ,radius: 8)
     } //body
     
 } //CardView

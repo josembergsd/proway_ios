@@ -1,12 +1,11 @@
 import Foundation
 import SwiftUI
 
-import Foundation
-import SwiftUI
-
 struct DetalhesPacoteView: View{
     
-    let pacote: Pacote
+    @Binding var pacote: Pacote
+    
+    @State private var favorito = false
     
     @State private var exibirMensagemCompra = false
     
@@ -32,10 +31,25 @@ struct DetalhesPacoteView: View{
                         Text(pacote.tituloPacote)
                             .font(.largeTitle)
                             .bold()
-                        
-                        Text(pacote.destino)
-                            .font(.title3)
-                            .foregroundStyle(.secondary)
+                        HStack {
+                            Text(pacote.destino)
+                                .font(.title3)
+                                .foregroundStyle(.secondary)
+                            
+                            Spacer()
+                            
+                            Button {
+                                pacote.favorito.toggle()
+                            }label: {
+                                Image(
+                                    systemName:
+                                        pacote.favorito
+                                            ? "heart.fill"
+                                            : "heart"
+                                )
+                                .foregroundStyle(.red)
+                            }
+                        }
                         
                         Label("\(pacote.qtdDiarias) diárias",
                               systemImage: "bed.double")
