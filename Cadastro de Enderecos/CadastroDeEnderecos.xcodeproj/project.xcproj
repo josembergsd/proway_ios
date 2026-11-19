@@ -11,20 +11,20 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "GerenciadorDeEventos", "target-membership": [ "GerenciadorDeEventos" ] },
+    { "kind": "folder", "path": "CadastroDeEnderecos", "target-membership": [ "CadastroDeEnderecos" ] },
     {
       "kind": "group",
       "name": "Products",
       "children": [
-        { "path": "<PRODUCTS>/GerenciadorDeEventos.app", "id": "000000000000000000000120", "type": "wrapper.application", "index": false },
+        { "path": "<PRODUCTS>/CadastroDeEnderecos.app", "id": "000000000000000000000120", "type": "wrapper.application", "index": false },
       ],
     },
   ],
   "targets": [
     {
-      "name": "GerenciadorDeEventos",
+      "name": "CadastroDeEnderecos",
       "id": "000000000000000100000000",
-      "product": "Products/GerenciadorDeEventos.app",
+      "product": "Products/CadastroDeEnderecos.app",
       "product-type": "application",
       "build-phases": [
         "compile-sources",
